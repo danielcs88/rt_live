@@ -144,7 +144,7 @@ date_ranges = functools.reduce(lambda x, y: x | y, date_ranges)
 plotly = df[date_ranges]
 
 # %%
-plotly.sort_values(by=["date"], inplace=True, ascending=False)
+plotly.sort_values(by=["date"], inplace=True, ascending=True)
 
 # %%
 plotly.to_csv("data/rt.csv", index=False)

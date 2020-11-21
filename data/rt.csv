@@ -1,256 +1,256 @@
-date,STUSPS,rt,state,state_id
-2020-08-20,ME,0.96,Massachusetts,25
-2020-08-20,LA,0.92,Louisiana,22
-2020-08-20,AZ,0.97,Arkansas,05
-2020-08-20,SC,0.92,South Carolina,45
-2020-08-20,OH,0.95,Ohio,39
-2020-08-20,UT,1.1,Utah,49
-2020-08-20,PA,1.09,Pennsylvania,42
-2020-08-20,ND,1.18,Nevada,32
-2020-08-20,ID,1.02,Illinois,17
-2020-08-20,DE,1.14,District of Columbia,11
-2020-08-20,WV,1.19,Wisconsin,55
-2020-08-20,SD,1.05,South Dakota,46
-2020-08-20,MT,1.04,Montana,30
-2020-08-20,MD,1.09,Maryland,24
-2020-08-20,KY,0.99,Kentucky,21
-2020-08-20,NE,1.03,New Hampshire,33
-2020-08-20,WY,1.09,Wyoming,56
-2020-08-20,VA,1.02,Vermont,50
-2020-08-20,FL,0.98,Florida,12
-2020-08-20,CO,1.07,Colorado,08
-2020-08-20,DC,0.98,Delaware,10
-2020-08-20,KS,1.02,Kansas,20
-2020-08-20,WI,1.17,West Virginia,54
-2020-08-20,NM,1.0,New York,36
-2020-08-20,NC,0.95,Nebraska,31
-2020-08-20,GA,0.94,Georgia,13
-2020-08-20,OK,0.98,Oklahoma,40
-2020-08-20,TX,0.9,Texas,48
-2020-08-20,IN,0.99,Iowa,19
-2020-08-20,NY,1.05,North Dakota,38
-2020-08-20,NJ,1.05,New Mexico,35
-2020-08-20,IL,0.96,Indiana,18
-2020-08-20,TN,0.99,Tennessee,47
-2020-08-20,IA,1.0,Idaho,16
-2020-08-20,CA,0.88,California,06
-2020-08-20,WA,1.02,Washington,53
-2020-08-20,MA,1.05,Maine,23
-2020-08-20,MS,0.91,Mississippi,28
-2020-08-20,AL,1.05,Alaska,02
-2020-08-20,NV,0.89,North Carolina,37
-2020-08-20,RI,1.03,Rhode Island,44
-2020-08-20,AK,1.02,Alabama,01
-2020-08-20,VT,1.01,Virginia,51
-2020-08-20,MO,1.0,Missouri,29
-2020-08-20,HI,0.88,Hawaii,15
-2020-08-20,OR,1.03,Oregon,41
-2020-08-20,CT,1.07,Connecticut,09
-2020-08-20,MI,1.01,Michigan,26
-2020-08-20,AR,0.98,Arizona,04
-2020-08-20,MN,1.0,Minnesota,27
-2020-08-20,NH,1.1,New Jersey,34
-2020-09-20,GA,0.99,Georgia,13
-2020-09-20,KS,1.06,Kansas,20
-2020-09-20,IL,1.09,Indiana,18
-2020-09-20,MS,0.87,Mississippi,28
-2020-09-20,MN,1.06,Minnesota,27
-2020-09-20,IN,1.15,Iowa,19
-2020-09-20,KY,1.11,Kentucky,21
-2020-09-20,NE,1.06,New Hampshire,33
-2020-09-20,TN,1.09,Tennessee,47
-2020-09-20,IA,1.05,Idaho,16
-2020-09-20,SD,1.1,South Dakota,46
-2020-09-20,AL,1.03,Alaska,02
-2020-09-20,WV,0.98,Wisconsin,55
-2020-09-20,ND,1.06,Nevada,32
-2020-09-20,MO,1.04,Missouri,29
-2020-09-20,MI,1.09,Michigan,26
-2020-09-20,OH,1.11,Ohio,39
-2020-09-20,LA,1.03,Louisiana,22
-2020-09-20,AR,1.04,Arizona,04
-2020-09-20,FL,1.0,Florida,12
-2020-09-20,OK,1.02,Oklahoma,40
-2020-09-20,NM,1.24,New York,36
-2020-09-20,SC,0.97,South Carolina,45
-2020-09-20,UT,1.05,Utah,49
-2020-09-20,NJ,1.13,New Mexico,35
-2020-09-20,NY,1.03,North Dakota,38
-2020-09-20,WA,0.99,Washington,53
-2020-09-20,CT,1.11,Connecticut,09
-2020-09-20,OR,1.0,Oregon,41
-2020-09-20,RI,1.12,Rhode Island,44
-2020-09-20,NV,1.11,North Carolina,37
-2020-09-20,MA,1.13,Maine,23
-2020-09-20,CA,0.99,California,06
-2020-09-20,VT,1.22,Virginia,51
-2020-09-20,AK,1.2,Alabama,01
-2020-09-20,NH,1.13,New Jersey,34
-2020-09-20,HI,1.02,Hawaii,15
-2020-09-20,ME,0.97,Massachusetts,25
-2020-09-20,PA,1.08,Pennsylvania,42
-2020-09-20,ID,1.09,Illinois,17
-2020-09-20,AZ,1.07,Arkansas,05
-2020-09-20,WI,1.08,West Virginia,54
-2020-09-20,CO,1.09,Colorado,08
-2020-09-20,DC,1.0,Delaware,10
-2020-09-20,VA,1.0,Vermont,50
-2020-09-20,WY,1.23,Wyoming,56
-2020-09-20,DE,0.97,District of Columbia,11
-2020-09-20,MD,1.01,Maryland,24
-2020-09-20,MT,1.2,Montana,30
-2020-09-20,TX,0.96,Texas,48
-2020-09-20,NC,1.0,Nebraska,31
-2020-10-20,AK,1.13,Alabama,01
-2020-10-20,KS,1.13,Kansas,20
-2020-10-20,TX,1.08,Texas,48
-2020-10-20,MS,0.86,Mississippi,28
-2020-10-20,NM,1.11,New York,36
-2020-10-20,CA,1.13,California,06
-2020-10-20,MN,1.2,Minnesota,27
-2020-10-20,HI,1.04,Hawaii,15
-2020-10-20,IA,1.19,Idaho,16
-2020-10-20,ND,1.09,Nevada,32
-2020-10-20,CO,1.13,Colorado,08
-2020-10-20,OR,1.19,Oregon,41
-2020-10-20,MO,1.16,Missouri,29
-2020-10-20,WA,1.2,Washington,53
-2020-10-20,WY,1.13,Wyoming,56
-2020-10-20,AR,1.1,Arizona,04
-2020-10-20,AZ,1.13,Arkansas,05
-2020-10-20,OK,1.1,Oklahoma,40
-2020-10-20,SD,1.06,South Dakota,46
-2020-10-20,LA,1.12,Louisiana,22
-2020-10-20,UT,1.1,Utah,49
-2020-10-20,MT,1.08,Montana,30
-2020-10-20,ID,1.06,Illinois,17
-2020-10-20,NV,1.12,North Carolina,37
-2020-10-20,NE,1.17,New Hampshire,33
-2020-10-20,WI,1.08,West Virginia,54
-2020-10-20,SC,1.06,South Carolina,45
-2020-10-20,PA,1.17,Pennsylvania,42
-2020-10-20,OH,1.19,Ohio,39
-2020-10-20,NJ,1.16,New Mexico,35
-2020-10-20,MD,1.2,Maryland,24
-2020-10-20,KY,1.07,Kentucky,21
-2020-10-20,IN,1.11,Iowa,19
-2020-10-20,NY,1.2,North Dakota,38
-2020-10-20,CT,1.19,Connecticut,09
-2020-10-20,MI,1.2,Michigan,26
-2020-10-20,VA,1.09,Vermont,50
-2020-10-20,DE,1.18,District of Columbia,11
-2020-10-20,FL,1.12,Florida,12
-2020-10-20,AL,1.03,Alaska,02
-2020-10-20,RI,1.22,Rhode Island,44
-2020-10-20,MA,1.17,Maine,23
-2020-10-20,ME,1.33,Massachusetts,25
-2020-10-20,NC,1.03,Nebraska,31
-2020-10-20,IL,1.18,Indiana,18
-2020-10-20,NH,1.25,New Jersey,34
-2020-10-20,GA,1.04,Georgia,13
-2020-10-20,TN,1.08,Tennessee,47
-2020-10-20,DC,1.17,Delaware,10
-2020-10-20,VT,1.34,Virginia,51
-2020-10-20,WV,1.1,Wisconsin,55
-2020-11-06,CO,1.04,Colorado,08
-2020-11-06,MD,1.16,Maryland,24
-2020-11-06,TX,1.05,Texas,48
-2020-11-06,NM,1.3,New York,36
-2020-11-06,HI,1.05,Hawaii,15
-2020-11-06,VA,1.1,Vermont,50
-2020-11-06,WY,1.09,Wyoming,56
-2020-11-06,NC,1.11,Nebraska,31
-2020-11-06,DE,1.17,District of Columbia,11
-2020-11-06,WI,1.04,West Virginia,54
-2020-11-06,PA,1.19,Pennsylvania,42
-2020-11-06,ME,1.22,Massachusetts,25
-2020-11-06,AK,1.14,Alabama,01
-2020-11-06,NH,1.3,New Jersey,34
-2020-11-06,CA,1.21,California,06
-2020-11-06,VT,1.36,Virginia,51
-2020-11-06,NV,1.23,North Carolina,37
-2020-11-06,MA,1.14,Maine,23
-2020-11-06,MT,1.05,Montana,30
-2020-11-06,OR,1.14,Oregon,41
-2020-11-06,WA,1.26,Washington,53
-2020-11-06,CT,1.18,Connecticut,09
-2020-11-06,AZ,1.13,Arkansas,05
-2020-11-06,NY,1.16,North Dakota,38
-2020-11-06,OK,1.14,Oklahoma,40
-2020-11-06,NJ,1.22,New Mexico,35
-2020-11-06,ID,1.04,Illinois,17
-2020-11-06,RI,1.18,Rhode Island,44
-2020-11-06,UT,1.06,Utah,49
-2020-11-06,DC,1.2,Delaware,10
-2020-11-06,FL,1.08,Florida,12
-2020-11-06,SD,0.95,South Dakota,46
-2020-11-06,IA,1.03,Idaho,16
-2020-11-06,MS,0.88,Mississippi,28
-2020-11-06,TN,1.12,Tennessee,47
-2020-11-06,AL,1.02,Alaska,02
-2020-11-06,WV,1.12,Wisconsin,55
-2020-11-06,OH,1.15,Ohio,39
-2020-11-06,ND,1.01,Nevada,32
-2020-11-06,KY,1.13,Kentucky,21
-2020-11-06,NE,1.07,New Hampshire,33
-2020-11-06,MN,1.11,Minnesota,27
-2020-11-06,IL,1.03,Indiana,18
-2020-11-06,MI,1.15,Michigan,26
-2020-11-06,GA,1.02,Georgia,13
-2020-11-06,KS,1.06,Kansas,20
-2020-11-06,MO,1.14,Missouri,29
-2020-11-06,AR,1.09,Arizona,04
-2020-11-06,IN,1.07,Iowa,19
-2020-11-06,SC,1.03,South Carolina,45
-2020-11-06,LA,1.18,Louisiana,22
-2020-11-20,SC,1.04,South Carolina,45
-2020-11-20,MI,1.15,Michigan,26
-2020-11-20,RI,1.19,Rhode Island,44
-2020-11-20,WA,1.26,Washington,53
-2020-11-20,IA,1.03,Idaho,16
-2020-11-20,OR,1.14,Oregon,41
-2020-11-20,NV,1.25,North Carolina,37
-2020-11-20,AL,1.03,Alaska,02
-2020-11-20,MS,0.88,Mississippi,28
-2020-11-20,MO,1.15,Missouri,29
-2020-11-20,VT,1.36,Virginia,51
-2020-11-20,TN,1.14,Tennessee,47
-2020-11-20,CA,1.22,California,06
-2020-11-20,NH,1.31,New Jersey,34
-2020-11-20,MN,1.11,Minnesota,27
-2020-11-20,AK,1.15,Alabama,01
-2020-11-20,ME,1.23,Massachusetts,25
-2020-11-20,IL,1.04,Indiana,18
-2020-11-20,WI,1.04,West Virginia,54
-2020-11-20,MA,1.14,Maine,23
-2020-11-20,CT,1.18,Connecticut,09
-2020-11-20,AR,1.1,Arizona,04
-2020-11-20,IN,1.08,Iowa,19
-2020-11-20,OK,1.14,Oklahoma,40
-2020-11-20,NC,1.13,Nebraska,31
-2020-11-20,KS,1.06,Kansas,20
-2020-11-20,TX,1.06,Texas,48
-2020-11-20,DC,1.2,Delaware,10
-2020-11-20,GA,1.03,Georgia,13
-2020-11-20,NE,1.06,New Hampshire,33
-2020-11-20,NM,1.32,New York,36
-2020-11-20,VA,1.12,Vermont,50
-2020-11-20,FL,1.09,Florida,12
-2020-11-20,SD,0.96,South Dakota,46
-2020-11-20,CO,1.05,Colorado,08
-2020-11-20,AZ,1.13,Arkansas,05
-2020-11-20,MD,1.17,Maryland,24
-2020-11-20,WY,1.1,Wyoming,56
-2020-11-20,DE,1.18,District of Columbia,11
-2020-11-20,ND,1.01,Nevada,32
-2020-11-20,MT,1.06,Montana,30
-2020-11-20,PA,1.21,Pennsylvania,42
-2020-11-20,WV,1.14,Wisconsin,55
-2020-11-20,LA,1.19,Louisiana,22
-2020-11-20,ID,1.06,Illinois,17
-2020-11-20,NJ,1.23,New Mexico,35
-2020-11-20,OH,1.15,Ohio,39
-2020-11-20,UT,1.08,Utah,49
-2020-11-20,NY,1.16,North Dakota,38
-2020-11-20,KY,1.14,Kentucky,21
-2020-11-20,HI,1.06,Hawaii,15
+date,state,rt,state_id
+2020-08-20,Maine,0.96,23
+2020-08-20,Louisiana,0.92,22
+2020-08-20,Arizona,0.97,04
+2020-08-20,South Carolina,0.92,45
+2020-08-20,Ohio,0.95,39
+2020-08-20,Utah,1.1,49
+2020-08-20,Pennsylvania,1.09,42
+2020-08-20,North Dakota,1.18,38
+2020-08-20,Idaho,1.02,16
+2020-08-20,Delaware,1.14,10
+2020-08-20,West Virginia,1.19,54
+2020-08-20,South Dakota,1.05,46
+2020-08-20,Montana,1.04,30
+2020-08-20,Maryland,1.09,24
+2020-08-20,Kentucky,0.99,21
+2020-08-20,Nebraska,1.03,31
+2020-08-20,Wyoming,1.09,56
+2020-08-20,Virginia,1.02,51
+2020-08-20,Florida,0.98,12
+2020-08-20,Colorado,1.07,08
+2020-08-20,,0.98,
+2020-08-20,Kansas,1.02,20
+2020-08-20,Wisconsin,1.17,55
+2020-08-20,New Mexico,1.0,35
+2020-08-20,North Carolina,0.95,37
+2020-08-20,Georgia,0.94,13
+2020-08-20,Oklahoma,0.98,40
+2020-08-20,Texas,0.9,48
+2020-08-20,Indiana,0.99,18
+2020-08-20,New York,1.05,36
+2020-08-20,New Jersey,1.05,34
+2020-08-20,Illinois,0.96,17
+2020-08-20,Tennessee,0.99,47
+2020-08-20,Iowa,1.0,19
+2020-08-20,California,0.88,06
+2020-08-20,Washington,1.02,53
+2020-08-20,Massachusetts,1.05,25
+2020-08-20,Mississippi,0.91,28
+2020-08-20,Alabama,1.05,01
+2020-08-20,Nevada,0.89,32
+2020-08-20,Rhode Island,1.03,44
+2020-08-20,Alaska,1.02,02
+2020-08-20,Vermont,1.01,50
+2020-08-20,Missouri,1.0,29
+2020-08-20,Hawaii,0.88,15
+2020-08-20,Oregon,1.03,41
+2020-08-20,Connecticut,1.07,09
+2020-08-20,Michigan,1.01,26
+2020-08-20,Arkansas,0.98,05
+2020-08-20,Minnesota,1.0,27
+2020-08-20,New Hampshire,1.1,33
+2020-09-20,Georgia,0.99,13
+2020-09-20,Kansas,1.06,20
+2020-09-20,Illinois,1.09,17
+2020-09-20,Mississippi,0.87,28
+2020-09-20,Minnesota,1.06,27
+2020-09-20,Indiana,1.15,18
+2020-09-20,Kentucky,1.11,21
+2020-09-20,Nebraska,1.06,31
+2020-09-20,Tennessee,1.09,47
+2020-09-20,Iowa,1.05,19
+2020-09-20,South Dakota,1.1,46
+2020-09-20,Alabama,1.03,01
+2020-09-20,West Virginia,0.98,54
+2020-09-20,North Dakota,1.06,38
+2020-09-20,Missouri,1.04,29
+2020-09-20,Michigan,1.09,26
+2020-09-20,Ohio,1.11,39
+2020-09-20,Louisiana,1.03,22
+2020-09-20,Arkansas,1.04,05
+2020-09-20,Florida,1.0,12
+2020-09-20,Oklahoma,1.02,40
+2020-09-20,New Mexico,1.24,35
+2020-09-20,South Carolina,0.97,45
+2020-09-20,Utah,1.05,49
+2020-09-20,New Jersey,1.13,34
+2020-09-20,New York,1.03,36
+2020-09-20,Washington,0.99,53
+2020-09-20,Connecticut,1.11,09
+2020-09-20,Oregon,1.0,41
+2020-09-20,Rhode Island,1.12,44
+2020-09-20,Nevada,1.11,32
+2020-09-20,Massachusetts,1.13,25
+2020-09-20,California,0.99,06
+2020-09-20,Vermont,1.22,50
+2020-09-20,Alaska,1.2,02
+2020-09-20,New Hampshire,1.13,33
+2020-09-20,Hawaii,1.02,15
+2020-09-20,Maine,0.97,23
+2020-09-20,Pennsylvania,1.08,42
+2020-09-20,Idaho,1.09,16
+2020-09-20,Arizona,1.07,04
+2020-09-20,Wisconsin,1.08,55
+2020-09-20,Colorado,1.09,08
+2020-09-20,,1.0,
+2020-09-20,Virginia,1.0,51
+2020-09-20,Wyoming,1.23,56
+2020-09-20,Delaware,0.97,10
+2020-09-20,Maryland,1.01,24
+2020-09-20,Montana,1.2,30
+2020-09-20,Texas,0.96,48
+2020-09-20,North Carolina,1.0,37
+2020-10-20,Alaska,1.13,02
+2020-10-20,Kansas,1.13,20
+2020-10-20,Texas,1.08,48
+2020-10-20,Mississippi,0.86,28
+2020-10-20,New Mexico,1.11,35
+2020-10-20,California,1.13,06
+2020-10-20,Minnesota,1.2,27
+2020-10-20,Hawaii,1.04,15
+2020-10-20,Iowa,1.19,19
+2020-10-20,North Dakota,1.09,38
+2020-10-20,Colorado,1.13,08
+2020-10-20,Oregon,1.19,41
+2020-10-20,Missouri,1.16,29
+2020-10-20,Washington,1.2,53
+2020-10-20,Wyoming,1.13,56
+2020-10-20,Arkansas,1.1,05
+2020-10-20,Arizona,1.13,04
+2020-10-20,Oklahoma,1.1,40
+2020-10-20,South Dakota,1.06,46
+2020-10-20,Louisiana,1.12,22
+2020-10-20,Utah,1.1,49
+2020-10-20,Montana,1.08,30
+2020-10-20,Idaho,1.06,16
+2020-10-20,Nevada,1.12,32
+2020-10-20,Nebraska,1.17,31
+2020-10-20,Wisconsin,1.08,55
+2020-10-20,South Carolina,1.06,45
+2020-10-20,Pennsylvania,1.17,42
+2020-10-20,Ohio,1.19,39
+2020-10-20,New Jersey,1.16,34
+2020-10-20,Maryland,1.2,24
+2020-10-20,Kentucky,1.07,21
+2020-10-20,Indiana,1.11,18
+2020-10-20,New York,1.2,36
+2020-10-20,Connecticut,1.19,09
+2020-10-20,Michigan,1.2,26
+2020-10-20,Virginia,1.09,51
+2020-10-20,Delaware,1.18,10
+2020-10-20,Florida,1.12,12
+2020-10-20,Alabama,1.03,01
+2020-10-20,Rhode Island,1.22,44
+2020-10-20,Massachusetts,1.17,25
+2020-10-20,Maine,1.33,23
+2020-10-20,North Carolina,1.03,37
+2020-10-20,Illinois,1.18,17
+2020-10-20,New Hampshire,1.25,33
+2020-10-20,Georgia,1.04,13
+2020-10-20,Tennessee,1.08,47
+2020-10-20,,1.17,
+2020-10-20,Vermont,1.34,50
+2020-10-20,West Virginia,1.1,54
+2020-11-06,Colorado,1.04,08
+2020-11-06,Maryland,1.16,24
+2020-11-06,Texas,1.05,48
+2020-11-06,New Mexico,1.3,35
+2020-11-06,Hawaii,1.05,15
+2020-11-06,Virginia,1.1,51
+2020-11-06,Wyoming,1.09,56
+2020-11-06,North Carolina,1.11,37
+2020-11-06,Delaware,1.17,10
+2020-11-06,Wisconsin,1.04,55
+2020-11-06,Pennsylvania,1.19,42
+2020-11-06,Maine,1.22,23
+2020-11-06,Alaska,1.14,02
+2020-11-06,New Hampshire,1.3,33
+2020-11-06,California,1.21,06
+2020-11-06,Vermont,1.36,50
+2020-11-06,Nevada,1.23,32
+2020-11-06,Massachusetts,1.14,25
+2020-11-06,Montana,1.05,30
+2020-11-06,Oregon,1.14,41
+2020-11-06,Washington,1.26,53
+2020-11-06,Connecticut,1.18,09
+2020-11-06,Arizona,1.13,04
+2020-11-06,New York,1.16,36
+2020-11-06,Oklahoma,1.14,40
+2020-11-06,New Jersey,1.22,34
+2020-11-06,Idaho,1.04,16
+2020-11-06,Rhode Island,1.18,44
+2020-11-06,Utah,1.06,49
+2020-11-06,,1.2,
+2020-11-06,Florida,1.08,12
+2020-11-06,South Dakota,0.95,46
+2020-11-06,Iowa,1.03,19
+2020-11-06,Mississippi,0.88,28
+2020-11-06,Tennessee,1.12,47
+2020-11-06,Alabama,1.02,01
+2020-11-06,West Virginia,1.12,54
+2020-11-06,Ohio,1.15,39
+2020-11-06,North Dakota,1.01,38
+2020-11-06,Kentucky,1.13,21
+2020-11-06,Nebraska,1.07,31
+2020-11-06,Minnesota,1.11,27
+2020-11-06,Illinois,1.03,17
+2020-11-06,Michigan,1.15,26
+2020-11-06,Georgia,1.02,13
+2020-11-06,Kansas,1.06,20
+2020-11-06,Missouri,1.14,29
+2020-11-06,Arkansas,1.09,05
+2020-11-06,Indiana,1.07,18
+2020-11-06,South Carolina,1.03,45
+2020-11-06,Louisiana,1.18,22
+2020-11-20,South Carolina,1.04,45
+2020-11-20,Michigan,1.15,26
+2020-11-20,Rhode Island,1.19,44
+2020-11-20,Washington,1.26,53
+2020-11-20,Iowa,1.03,19
+2020-11-20,Oregon,1.14,41
+2020-11-20,Nevada,1.25,32
+2020-11-20,Alabama,1.03,01
+2020-11-20,Mississippi,0.88,28
+2020-11-20,Missouri,1.15,29
+2020-11-20,Vermont,1.36,50
+2020-11-20,Tennessee,1.14,47
+2020-11-20,California,1.22,06
+2020-11-20,New Hampshire,1.31,33
+2020-11-20,Minnesota,1.11,27
+2020-11-20,Alaska,1.15,02
+2020-11-20,Maine,1.23,23
+2020-11-20,Illinois,1.04,17
+2020-11-20,Wisconsin,1.04,55
+2020-11-20,Massachusetts,1.14,25
+2020-11-20,Connecticut,1.18,09
+2020-11-20,Arkansas,1.1,05
+2020-11-20,Indiana,1.08,18
+2020-11-20,Oklahoma,1.14,40
+2020-11-20,North Carolina,1.13,37
+2020-11-20,Kansas,1.06,20
+2020-11-20,Texas,1.06,48
+2020-11-20,,1.2,
+2020-11-20,Georgia,1.03,13
+2020-11-20,Nebraska,1.06,31
+2020-11-20,New Mexico,1.32,35
+2020-11-20,Virginia,1.12,51
+2020-11-20,Florida,1.09,12
+2020-11-20,South Dakota,0.96,46
+2020-11-20,Colorado,1.05,08
+2020-11-20,Arizona,1.13,04
+2020-11-20,Maryland,1.17,24
+2020-11-20,Wyoming,1.1,56
+2020-11-20,Delaware,1.18,10
+2020-11-20,North Dakota,1.01,38
+2020-11-20,Montana,1.06,30
+2020-11-20,Pennsylvania,1.21,42
+2020-11-20,West Virginia,1.14,54
+2020-11-20,Louisiana,1.19,22
+2020-11-20,Idaho,1.06,16
+2020-11-20,New Jersey,1.23,34
+2020-11-20,Ohio,1.15,39
+2020-11-20,Utah,1.08,49
+2020-11-20,New York,1.16,36
+2020-11-20,Kentucky,1.14,21
+2020-11-20,Hawaii,1.06,15

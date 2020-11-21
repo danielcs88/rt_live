@@ -20,7 +20,7 @@ df = pd.read_csv(
 )
 
 # %%
-df.columns = ["date", "STUSPS", "rt"]
+df.columns = ["date", "state", "rt"]
 
 # %%
 df["rt"] = round(df.rt, 2)
@@ -29,58 +29,59 @@ df["rt"] = round(df.rt, 2)
 url = "https://raw.githubusercontent.com/PublicaMundi/MappingAPI/master/data/geojson/us-states.json"
 
 # %%
+# state_id = []
+# STUSPS = []
+# state_name = []
+
+# for state in list(range(0, 51)):
+#     state_id.append(us.get("features")[state].get("id"))
+#     state_name.append((us.get("features")[state]).get("properties").get("name"))
+#     name = (us.get("features")[state]).get("properties").get("name")
+#     #     print(name)
+#     code = us.get("features")[state].get("id")
+#     print(f"'{name}': '{code}'")
+
+# %%
 with urlopen(url) as response:
     us = json.load(response)
 
 
 # %%
-state_id = []
-STUSPS = []
-state_name = []
-
-for state in list(range(0, 51)):
-    print(us.get("features")[state].get("id"))
-    state_id.append(us.get("features")[state].get("id"))
-    state_name.append((us.get("features")[state]).get("properties").get("name"))
-    print((us.get("features")[state]).get("properties").get("name"))
-
-# %%
 abbre = {
-    "AK": "Alaska",
     "AL": "Alabama",
-    "AR": "Arkansas",
+    "AK": "Alaska",
     "AZ": "Arizona",
+    "AR": "Arkansas",
     "CA": "California",
     "CO": "Colorado",
     "CT": "Connecticut",
-    "DC": "District of Columbia",
     "DE": "Delaware",
     "FL": "Florida",
     "GA": "Georgia",
     "HI": "Hawaii",
-    "IA": "Iowa",
     "ID": "Idaho",
     "IL": "Illinois",
     "IN": "Indiana",
+    "IA": "Iowa",
     "KS": "Kansas",
     "KY": "Kentucky",
     "LA": "Louisiana",
-    "MA": "Massachusetts",
-    "MD": "Maryland",
     "ME": "Maine",
+    "MD": "Maryland",
+    "MA": "Massachusetts",
     "MI": "Michigan",
     "MN": "Minnesota",
     "MS": "Mississippi",
     "MO": "Missouri",
     "MT": "Montana",
-    "NC": "North Carolina",
-    "ND": "North Dakota",
     "NE": "Nebraska",
+    "NV": "Nevada",
     "NH": "New Hampshire",
     "NJ": "New Jersey",
     "NM": "New Mexico",
-    "NV": "Nevada",
     "NY": "New York",
+    "NC": "North Carolina",
+    "ND": "North Dakota",
     "OH": "Ohio",
     "OK": "Oklahoma",
     "OR": "Oregon",
@@ -91,37 +92,80 @@ abbre = {
     "TN": "Tennessee",
     "TX": "Texas",
     "UT": "Utah",
-    "VA": "Virginia",
     "VT": "Vermont",
+    "VA": "Virginia",
     "WA": "Washington",
-    "WI": "Wisconsin",
     "WV": "West Virginia",
+    "WI": "Wisconsin",
     "WY": "Wyoming",
 }
 
 # %%
-print(state_name)
+state_codes = {
+    "Alabama": "01",
+    "Alaska": "02",
+    "Arizona": "04",
+    "Arkansas": "05",
+    "California": "06",
+    "Colorado": "08",
+    "Connecticut": "09",
+    "Delaware": "10",
+    "District of Columbia": "11",
+    "Florida": "12",
+    "Georgia": "13",
+    "Hawaii": "15",
+    "Idaho": "16",
+    "Illinois": "17",
+    "Indiana": "18",
+    "Iowa": "19",
+    "Kansas": "20",
+    "Kentucky": "21",
+    "Louisiana": "22",
+    "Maine": "23",
+    "Maryland": "24",
+    "Massachusetts": "25",
+    "Michigan": "26",
+    "Minnesota": "27",
+    "Mississippi": "28",
+    "Missouri": "29",
+    "Montana": "30",
+    "Nebraska": "31",
+    "Nevada": "32",
+    "New Hampshire": "33",
+    "New Jersey": "34",
+    "New Mexico": "35",
+    "New York": "36",
+    "North Carolina": "37",
+    "North Dakota": "38",
+    "Ohio": "39",
+    "Oklahoma": "40",
+    "Oregon": "41",
+    "Pennsylvania": "42",
+    "Rhode Island": "44",
+    "South Carolina": "45",
+    "South Dakota": "46",
+    "Tennessee": "47",
+    "Texas": "48",
+    "Utah": "49",
+    "Vermont": "50",
+    "Virginia": "51",
+    "Washington": "53",
+    "West Virginia": "54",
+    "Wisconsin": "55",
+    "Wyoming": "56",
+}
 
 # %%
-state_codes = dict(zip(abbre, state_id))
+df["state"] = df["state"].map(abbre)
 
 # %%
-state_codes
-
-# %%
-state_name = dict(zip(abbre, state_name))
-
-# %%
-df["state"] = df["STUSPS"].map(state_name)
-
-# %%
-df["state_id"] = df["STUSPS"].map(state_codes)
+df["state_id"] = df["state"].map(state_codes)
 
 # %%
 df
 
 # %%
-df.query("STUSPS == 'CA'").query("date == '2020-11-04'")
+df.query("state == 'CA'").query("date == '2020-11-04'")
 
 # %%
 latest = sorted(df["date"].unique())[-1]

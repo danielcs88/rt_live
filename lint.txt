@@ -1,0 +1,5 @@
+rt_live.py:40:80: E501 line too long (83 > 79 characters)
+rt_live.py:206:80: E501 line too long (100 > 79 characters)
+rt_live.py:269:1: F821 undefined name 'get_ipython'
+rt_live.py:273:1: F821 undefined name 'get_ipython'
+rt_live.py:274:80: E501 line too long (89 > 79 characters)

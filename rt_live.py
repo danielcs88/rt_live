@@ -1,50 +1,47 @@
 # -*- coding: utf-8 -*-
 # %%
-import datetime as dt
+"""
+Time Series tidy Pandas DataFrame script.
+"""
+
+# %%
+__author__ = "Daniel Cárdenas"
+__maintainer__ = "Daniel Cárdenas"
+__email__ = "jcard151@fiu.edu"
+
+# %%
 import functools
 import json
 from urllib.request import urlopen
 
-# import ipywidgets as widgets
 import numpy as np
 import pandas as pd
 import plotly.express as px
-from matplotlib import pyplot as plt
+from IPython.display import display
 
 # %%
 df = pd.read_csv(
     "https://d14wlfuexuxgcm.cloudfront.net/covid/rt.csv",
-    usecols=["date", "region", "mean"],
+    usecols=["date", "region", "mean", "lower_80", "upper_80"],
     parse_dates=["date"],
     infer_datetime_format=True,
 )
 
 # %%
-df.columns = ["date", "state", "rt"]
+df.columns = ["date", "state", "rt", "lower_80", "upper_80"]
 
 # %%
 df["rt"] = round(df.rt, 2)
+df["lower_80"] = round(df["lower_80"], 2)
+df["upper_80"] = round(df["upper_80"], 2)
 
 # %%
-url = "https://raw.githubusercontent.com/PublicaMundi/MappingAPI/master/data/geojson/us-states.json"
-
-# %%
-# state_id = []
-# STUSPS = []
-# state_name = []
-
-# for state in list(range(0, 51)):
-#     state_id.append(us.get("features")[state].get("id"))
-#     state_name.append((us.get("features")[state]).get("properties").get("name"))
-#     name = (us.get("features")[state]).get("properties").get("name")
-#     #     print(name)
-#     code = us.get("features")[state].get("id")
-#     print(f"'{name}': '{code}'")
-
-# %%
-with urlopen(url) as response:
-    us = json.load(response)
-
+case_data = pd.read_csv(
+    "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv",
+    parse_dates=["date"],
+    infer_datetime_format=True,
+    usecols=["date", "state", "cases", "deaths"],
+)
 
 # %%
 abbre = {
@@ -162,30 +159,38 @@ df["state"] = df["state"].map(abbre)
 df["state_id"] = df["state"].map(state_codes)
 
 # %%
-df
-
-# %%
-df.query("state == 'CA'").query("date == '2020-11-04'")
-
-# %%
-latest = sorted(df["date"].unique())[-1]
-two_w_ago = latest - np.timedelta64(14, "D")
-one_m_ago = (pd.Timestamp(latest) - pd.DateOffset(months=1)).to_numpy()
-two_m_ago = (pd.Timestamp(latest) - pd.DateOffset(months=2)).to_numpy()
-three_m_ago = (pd.Timestamp(latest) - pd.DateOffset(months=3)).to_numpy()
-
-# %%
-dates = [latest, two_w_ago, one_m_ago, two_m_ago, three_m_ago]
-
-# %%
-date_ranges = [df["date"] == date for date in dates]
+display(df)
 
 
 # %%
-date_ranges = functools.reduce(lambda x, y: x | y, date_ranges)
+def date_ranges(dataframe):
+    """
+    Slices DataFrame to specific dates.
+    """
+
+    latest = sorted(dataframe["date"].unique())[-1]
+    two_w_ago = latest - np.timedelta64(14, "D")
+    one_m_ago = (pd.Timestamp(latest) - pd.DateOffset(months=1)).to_numpy()
+    two_m_ago = (pd.Timestamp(latest) - pd.DateOffset(months=2)).to_numpy()
+    three_m_ago = (pd.Timestamp(latest) - pd.DateOffset(months=3)).to_numpy()
+
+    # %%
+    dates = [latest, two_w_ago, one_m_ago, two_m_ago, three_m_ago]
+
+    # %%
+    df_dates = [dataframe["date"] == date for date in dates]
+
+    # %%
+    filtered = functools.reduce(lambda x, y: x | y, df_dates)
+
+    return dataframe[filtered]
+
 
 # %%
-plotly = df[date_ranges]
+plotly = pd.merge(date_ranges(df), date_ranges(case_data))
+
+# %%
+plotly.query("state == 'New York'")
 
 # %%
 plotly.sort_values(by=["date"], inplace=True, ascending=True)
@@ -196,8 +201,14 @@ plotly.to_csv("data/rt.csv", index=False)
 # %%
 plotly = pd.read_csv("data/rt.csv", dtype={"state_id": str})
 
+
 # %%
-# fig = px.choropleth_mapbox(
+URL = "https://raw.githubusercontent.com/PublicaMundi/MappingAPI/master/data/geojson/us-states.json"
+
+with urlopen(URL) as response:
+    us = json.load(response)
+
+# %%
 fig = px.choropleth(
     plotly,
     geojson=us,
@@ -213,23 +224,26 @@ fig = px.choropleth(
         (1, "red"),
     ],
     hover_name="state",
-    hover_data=["date", "state", "rt"],
+    hover_data=["date", "rt", "lower_80", "upper_80", "cases", "deaths"],
     range_color=(0, 2),
     center={"lon": -94.99141861526407, "lat": 38.1354813882185},
-    #     zoom=2.3350828189345934,
-    #     mapbox_style="carto-positron",
     scope="usa",
-    labels={"date": "Date", "state": "State", "rt": "Rₜ"},
+    labels={
+        "date": "Date",
+        "state": "State",
+        "rt": "Rₜ",
+        "lower_80": "Lower Range",
+        "upper_80": "Upper Range",
+        "cases": "Cases",
+        "deaths": "Deaths",
+        "state_id": "FIPS",
+    },
 )
 
 
 fig.layout.font.family = "Arial"
 
-# fig.update_geos(fitbounds="locations", visible=False)
-
 fig.update_layout(
-    width=1000,
-    height=1000,
     title=f"Rₜ: COVID-19 | United States",
     annotations=[
         dict(
@@ -238,7 +252,7 @@ fig.update_layout(
             yanchor="top",
             y=-0.05,
             showarrow=False,
-            text="Sources: rt.live, U.S. Census Bureau",
+            text="Sources: rt.live, The New York Times",
         )
     ],
     autosize=True,

@@ -190,7 +190,13 @@ def date_ranges(dataframe):
 plotly = pd.merge(date_ranges(df), date_ranges(case_data))
 
 # %%
+case_data
+
+# %%
 plotly.query("state == 'New York'")
+
+# %%
+plotly
 
 # %%
 plotly.sort_values(by=["date"], inplace=True, ascending=True)

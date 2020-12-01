@@ -20,12 +20,10 @@ test = pd.read_csv("data/rt.csv")
 
 latest = sorted(df["date"].unique())[-1]
 latest_cases = sorted(case_data["date"].unique())[-1]
+on_file = sorted(test["date"].unique())[-1]
 
 if latest_cases != latest:
-    return f"No run: NYT data ({latest_cases}) and RT data ({latest}) are different."
-
-    on_file = sorted(test["date"].unique())[-1]
-
+    print(f"No run: NYT data ({latest_cases}) and RT data ({latest}) are different.")
 elif latest == on_file:
     print("No run")
 else:
